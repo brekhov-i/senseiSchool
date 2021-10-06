@@ -1,0 +1,331 @@
+.windowPopup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s all ease-in-out; }
+  .windowPopup.open {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all ease-in-out; }
+  .windowPopup__wrapper {
+    padding-top: 60px;
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.69444vw;
+    overflow: hidden; }
+  .windowPopup__close {
+    position: absolute;
+    top: 1.38889vw;
+    right: 1.38889vw;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .windowPopup__close span {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #000; }
+      .windowPopup__close span:first-child {
+        transform: rotate(45deg) translateX(0.06944vw) translateY(0vw); }
+      .windowPopup__close span:last-child {
+        transform: rotate(-45deg) translateX(0.06944vw) translateY(-0.03472vw); }
+  .windowPopup__form {
+    width: 100%; }
+
+.firstScreen {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  overflow: hidden;
+  position: relative; }
+  .firstScreen__bg {
+    position: absolute;
+    left: 38.19444vw;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: auto; }
+  .firstScreen__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .firstScreen__title {
+    font-family: "FiveYearsLater", sans-serif;
+    font-weight: 400;
+    font-size: 4.86111vw;
+    line-height: 5.83333vw;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 2.77778vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .firstScreen__title span {
+      color: #f57b51; }
+  .firstScreen__btn {
+    width: 24.65278vw;
+    height: 4.30556vw;
+    background-color: var(--color-primary);
+    border-radius: 0.41667vw;
+    font-family: "ObjectSans", sans-serif;
+    font-size: 1.38889vw;
+    line-height: 1.80556vw;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    transition: 0.5s all ease-in-out; }
+    .firstScreen__btn:hover {
+      transition: 0.5s all ease-in-out;
+      background-color: #ff6835; }
+  @media (max-width: 991px) {
+    .firstScreen {
+      height: 168.75vmin;
+      padding-top: 0vmin;
+      position: relative; }
+      .firstScreen__bg {
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        min-height: 31.25vmin;
+        width: 100%; }
+      .firstScreen__wrapper {
+        width: 100%;
+        height: 76.875vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+      .firstScreen__title {
+        font-size: 8.75vmin;
+        line-height: 11.25vmin;
+        margin-bottom: 6.25vmin; }
+      .firstScreen__btn {
+        width: 48.61111vw;
+        height: 6.94444vw;
+        border-radius: 0.41667vw;
+        font-size: 2.22222vw;
+        line-height: 2.5vw; } }
+  @media (max-width: 480px) {
+    .firstScreen {
+      height: 218.75vmin;
+      padding-top: 15.625vmin;
+      position: relative; }
+      .firstScreen__bg {
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        min-height: 31.25vmin;
+        width: 100%; }
+      .firstScreen__wrapper {
+        width: 100%;
+        height: 120.625vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+      .firstScreen__title {
+        font-size: 10vmin;
+        line-height: 11.875vmin;
+        margin-bottom: 10vmin; }
+      .firstScreen__btn {
+        width: 100%;
+        height: 19.375vmin;
+        border-radius: 1.875vmin;
+        font-size: 6.25vmin;
+        line-height: 8.125vmin; } }
+
+.aboutCourse {
+  width: 100%;
+  height: auto;
+  padding: 8.33333vw 0;
+  background-color: #f0efec; }
+  .aboutCourse__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .aboutCourse__title {
+    font-family: "FiveYearsLater", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.33333vw;
+    line-height: 4.30556vw;
+    color: var(--color-black);
+    margin-bottom: 2.77778vw; }
+  .aboutCourse__subtitle {
+    width: 100%;
+    position: relative;
+    font-family: "FiveYearsLater", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 1.52778vw;
+    text-transform: uppercase;
+    color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.19444vw; }
+    .aboutCourse__subtitle img {
+      width: 100%;
+      max-width: 72.91667vw;
+      margin-bottom: 0.13889vw; }
+  .aboutCourse__carts {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px; }
+    .aboutCourse__carts .cart {
+      grid-column: 6 span;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .aboutCourse__carts .cart__img {
+        min-width: 16.45833vw;
+        min-height: 16.66667vw;
+        border-radius: 0.97222vw;
+        margin-right: 1.11111vw;
+        overflow: hidden; }
+        .aboutCourse__carts .cart__img img {
+          width: 100%;
+          height: 100%; }
+      .aboutCourse__carts .cart__content {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+      .aboutCourse__carts .cart__title {
+        font-family: "FiveYearsLater", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.22222vw;
+        line-height: 2.91667vw;
+        color: #101010;
+        margin-bottom: 1.11111vw; }
+      .aboutCourse__carts .cart__desc {
+        font-family: "ObjectSans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25vw;
+        line-height: 1.80556vw;
+        letter-spacing: 0.01em;
+        color: #000000; }
+        .aboutCourse__carts .cart__desc span {
+          color: var(--color-primary);
+          font-weight: 600; }
+  @media (max-width: 991px) {
+    .aboutCourse {
+      padding: 8.33333vw 0; }
+      .aboutCourse__wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+      .aboutCourse__title {
+        font-size: 3.81944vw;
+        line-height: 4.30556vw;
+        margin-bottom: 3.125vw; }
+      .aboutCourse__subtitle {
+        font-size: 1.80556vw;
+        line-height: 1.94444vw;
+        text-transform: uppercase;
+        color: var(--color-black);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 3.19444vw; }
+        .aboutCourse__subtitle img {
+          width: 100%;
+          min-width: 0;
+          margin-bottom: 0.20833vw;
+          margin-left: 1.38889vw;
+          flex-grow: 1; }
+      .aboutCourse__carts {
+        grid-row-gap: 24px; }
+        .aboutCourse__carts .cart {
+          grid-column: 12 span; }
+          .aboutCourse__carts .cart__img {
+            min-width: 20.83333vw;
+            min-height: 20.83333vw;
+            margin-right: 2.77778vw; }
+          .aboutCourse__carts .cart__title {
+            font-size: 2.63889vw;
+            line-height: 3.26389vw;
+            margin-bottom: 1.52778vw; }
+          .aboutCourse__carts .cart__desc {
+            font-size: 1.66667vw;
+            line-height: 2.22222vw; } }
+  @media (max-width: 480px) {
+    .aboutCourse {
+      padding: 13.75vmin 0 20vmin; }
+      .aboutCourse__title {
+        font-size: 7.5vmin;
+        line-height: 10.625vmin;
+        margin-bottom: 7.5vmin; }
+      .aboutCourse__subtitle {
+        font-size: 4.375vmin;
+        line-height: 6.875vmin;
+        margin-bottom: 7.5vmin;
+        justify-content: flex-start; }
+        .aboutCourse__subtitle img {
+          min-width: 0;
+          min-width: 59.375vmin;
+          margin-bottom: 0.46875vmin;
+          margin-left: 3.125vmin; }
+      .aboutCourse__carts {
+        grid-row-gap: 18.75vmin; }
+        .aboutCourse__carts .cart {
+          flex-direction: column; }
+          .aboutCourse__carts .cart__img {
+            width: 100%;
+            min-width: 20.83333vw;
+            min-height: 20.83333vw;
+            margin-right: 0;
+            margin-bottom: 5vmin; }
+          .aboutCourse__carts .cart__title {
+            font-size: 7.5vmin;
+            line-height: 9.6875vmin;
+            margin-bottom: 1.25vmin; }
+          .aboutCourse__carts .cart__desc {
+            font-size: 5vmin;
+            line-height: 6.875vmin; } }
+
+/*# sourceMappingURL=main.css.map */
